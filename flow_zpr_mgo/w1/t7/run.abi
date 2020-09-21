@@ -1,0 +1,88 @@
+##############################################
+####                SECTION: basic               
+##############################################
+ nband 12
+ ecut 35.0
+ ngkpt 4 4 4
+ nshiftk 1
+ shiftk 0 0 0
+ nstep 150
+ kptopt 3
+ tolvrs 1e-10
+##############################################
+####                 SECTION: dev                
+##############################################
+ iomode 3
+##############################################
+####                SECTION: dfpt                
+##############################################
+ rfphon 1
+ rfatpol 2 2
+ rfdir 1 0 0
+##############################################
+####                SECTION: files               
+##############################################
+ prtpot 1
+ prtwf -1
+ prtden 0
+ irdwfk 1
+##############################################
+####               SECTION: gstate               
+##############################################
+ diemac 9.0
+ nbdbuf 4
+ nqpt 1
+ qpt    0.2500000000    0.0000000000    0.0000000000
+##############################################
+####                SECTION: paral               
+##############################################
+ paral_kgb 0
+ nppert 1
+ npkpt 2
+##############################################
+####                  STRUCTURE                  
+##############################################
+ natom 2
+ ntypat 2
+ typat 2 1
+ znucl 8 12
+ xred
+    0.0000000000    0.0000000000    0.0000000000
+    0.5000000000    0.5000000000    0.5000000000
+ acell    1.0    1.0    1.0
+ rprim
+    0.0000000000    4.0182361526    4.0182361526
+    4.0182361526    0.0000000000    4.0182361526
+    4.0182361526    4.0182361526    0.0000000000
+
+
+#<JSON>
+#{
+#    "pseudos": [
+#        {
+#            "basename": "O.psp8",
+#            "type": "NcAbinitPseudo",
+#            "symbol": "O",
+#            "Z": 8,
+#            "Z_val": 6.0,
+#            "l_max": 2,
+#            "md5": "733e923716a9eadd6cde8fc80d866281",
+#            "filepath": "/Users/gmatteo/git_repos/MgO_eph_zpr/O.psp8",
+#            "@module": "pymatgen.io.abinit.pseudos",
+#            "@class": "NcAbinitPseudo"
+#        },
+#        {
+#            "basename": "Mg-sp-gw.psp8",
+#            "type": "NcAbinitPseudo",
+#            "symbol": "Mg",
+#            "Z": 12,
+#            "Z_val": 10.0,
+#            "l_max": 1,
+#            "md5": "9a3056a6bb9e2c462f95742dbd774fb7",
+#            "filepath": "/Users/gmatteo/git_repos/MgO_eph_zpr/Mg-sp-gw.psp8",
+#            "@module": "pymatgen.io.abinit.pseudos",
+#            "@class": "NcAbinitPseudo"
+#        }
+#    ]
+#}
+#</JSON>
