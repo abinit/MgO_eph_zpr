@@ -1,1 +1,0 @@
-/Users/gmatteo/git_repos/MgO_eph_zpr/flow_zpr_mgo/w1/t2/outdata/out_1WF9.nc
