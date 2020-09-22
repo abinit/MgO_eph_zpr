@@ -1,1 +1,0 @@
-/Users/gmatteo/git_repos/MgO_eph_zpr/flow_zpr_mgo/w0/t0/outdata/out_DEN.nc
