@@ -52,7 +52,9 @@ def make_scf_input():
         diemac=9.0,
         nstep=150,
         nbdbuf=4,
-        prtpot=1,        # Print potential for Sternheimer
+        prtpot=0,        # Print GS potential for Sternheimer as well as DFPT potentials
+        #prtpot=1,        # Print GS potential for Sternheimer as well as DFPT potentials
+        prtden=1,        # Print GS density as well as DPFT densities
         iomode=3,        # Produce output files in netcdf format.
     )
 
@@ -96,7 +98,7 @@ def build_flow(options):
 
     flow.register_work(ph_work)
     flow.allocate()
-    flow.use_smartio()
+    #flow.use_smartio()
 
     return flow
 
