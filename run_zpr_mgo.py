@@ -35,6 +35,15 @@ def make_scf_input():
               0.5000000000, 0.5000000000, 0.5000000000]
     )
 
+    #i, j = 0, 1  # indices of sites to swap
+    #species_i = structure[i].specie
+    #species_j = structure[j].specie
+    #structure.replace(i, species_j)
+    #structure.replace(j, species_i)
+    #print(structure.abi_string)
+    #import sys
+    #sys.exit(1)
+
     # NC pseudos assumed in currect working directory.
     pseudos = ["Mg-sp-gw.psp8", "O.psp8"]
 
